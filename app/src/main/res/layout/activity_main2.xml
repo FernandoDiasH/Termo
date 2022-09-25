@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#312F3B"
+    android:textAlignment="center"
+    tools:context=".MainActivity2">
+
+    <TextView
+        android:id="@+id/txt_title"
+        android:layout_width="227dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="208dp"
+        android:text="TERMO"
+        android:textAlignment="center"
+        android:textAllCaps="false"
+        android:textColor="#FFFFFF"
+        android:textSize="48sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <Button
+        android:id="@+id/button_jogar_teste"
+        android:layout_width="300dp"
+        android:layout_height="60dp"
+        android:layout_marginTop="145dp"
+        android:layout_marginBottom="457dp"
+        android:background="@drawable/button"
+        android:text="Jogar"
+
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/txt_title"
+        app:layout_constraintVertical_bias="0.0"
+
+        />
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>

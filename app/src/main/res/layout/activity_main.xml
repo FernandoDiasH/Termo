@@ -1,0 +1,84 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#6e5c62"
+    tools:context=".MainActivity">
+
+    <com.google.android.material.textfield.TextInputLayout
+        android:id="@+id/input_layout_guess"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="32dp"
+        android:layout_marginTop="16dp"
+        android:layout_marginEnd="32dp"
+        android:layout_marginBottom="120dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/grid_layout">
+
+        <com.google.android.material.textfield.TextInputEditText
+            android:id="@+id/input_text_guess"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Digite uma palavra"
+            android:textColorHint="#616161"
+            android:visibility="visible" />
+    </com.google.android.material.textfield.TextInputLayout>
+
+    <androidx.gridlayout.widget.GridLayout
+        android:id="@+id/grid_layout"
+
+        android:paddingStart="12dp"
+        android:layout_width="0dp"
+        android:layout_height="420dp"
+        android:layout_marginStart="6dp"
+        android:layout_marginTop="64dp"
+        android:layout_marginEnd="6dp"
+        android:layout_marginBottom="256dp"
+
+        android:background="@drawable/grid_border"
+        android:clipChildren="false"
+        app:columnCount="5"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:rowCount="6"
+        app:useDefaultMargins="true" />
+
+    <Button
+        android:id="@+id/button_guess"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="156dp"
+        android:layout_marginTop="57dp"
+        android:layout_marginEnd="161dp"
+        android:layout_marginBottom="46dp"
+        android:text="Adivinhar"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/input_layout_guess" />
+
+    <TextView
+        android:id="@+id/text_win"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="176dp"
+        android:layout_marginTop="13dp"
+        android:layout_marginEnd="177dp"
+        android:layout_marginBottom="28dp"
+        android:fontFamily="@font/mitr_semibold"
+        android:textSize="30dp"
+        app:layout_constraintBottom_toTopOf="@+id/grid_layout"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>
